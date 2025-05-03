@@ -1,5 +1,5 @@
 {
-	// "extends": "./.svelte-kit/tsconfig.json",
+	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
 		"allowJs": true,
 		"checkJs": true,
@@ -11,7 +11,11 @@
 		"strict": true,
 		"moduleResolution": "bundler",
 		"types": ["node"],
-		"typeRoots": ["./node_modules/@types", "./src/lib/types"]
+		"typeRoots": ["./node_modules/@types", "./src/lib/types"],
+		"paths": {
+			"$lib": ["./src/lib"],
+			"$lib/*": ["./src/lib/*"]
+		}
 	}
 	// Path aliases are handled by https://svelte.dev/docs/kit/configuration#alias
 	// except $lib which is handled by https://svelte.dev/docs/kit/configuration#files
