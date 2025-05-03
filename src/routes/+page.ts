@@ -1,4 +1,4 @@
-import { loadGeoJSONData } from '../lib/utils/config';
+import { loadGeoJSONData } from '$lib/utils/config';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ fetch }) => {

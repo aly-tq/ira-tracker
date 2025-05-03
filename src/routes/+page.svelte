@@ -7,7 +7,7 @@
 		uiState,
 		currentCount,
 		isDataLoading
-	} from '../lib/stores.js';
+	} from '$lib/stores.js';
 	import { TABLET_BREAKPOINT, CATEGORIES, STATE_BOUNDS } from '$lib/utils/constants';
 	import maplibregl from 'maplibre-gl';
 	import * as pmtiles from 'pmtiles';
